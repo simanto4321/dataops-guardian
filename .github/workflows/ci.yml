@@ -21,7 +21,7 @@ jobs:
       - name: Seed demo warehouse
         run: python -m app.seed
       - name: Run tests
-        run: pytest -q
+        run: PYTHONPATH=. pytest -q
 
   frontend:
     runs-on: ubuntu-latest
